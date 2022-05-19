@@ -1,3 +1,26 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "stdlib.h": "c",
+        "sqlite3.h": "c",
+        "stdio.h": "c",
+        "msgbuf.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/mrx/mystrtest/myCtest",
+            "binaryPath": "/home/mrx/mystrtest/myCtest/deletedb",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/mrx/mystrtest/myCtest",
+            "binaryPath": "/home/mrx/mystrtest/myCtest/sqlitInsert",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/mrx/mystrtest/myCtest",
+            "binaryPath": "/home/mrx/mystrtest/myCtest/selectDB",
+            "binaryArgs": []
+        }
+    ]
 }

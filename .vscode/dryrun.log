@@ -1,12 +1,5 @@
-make --dry-run --always-make --keep-going --print-directory
+make slectDB --dry-run --keep-going --print-directory
 make: Entering directory '/home/mrx/mystrtest/myCtest'
-gcc    -c -o outputstr.o outputstr.c
-gcc -g -o outputstr outputstr.c
-gcc    -c -o unpitest.o unpitest.c
-gcc -g -std=c11  -o unpitest unpitest.c -lunpipc -lpthread -lrt
-gcc    -c -o mytest.o mytest.c
-gcc -g -std=c11  -o mytest mytest.c
-gcc    -c -o printtest.o printtest.c
-gcc -g -std=c11  -o printtest printtest.c
+mipsel-openwrt-linux-gcc -g -std=c11 -o selectDB   -L/opt/openwrt/build_dir/target-mipsel_24kc_musl/sqlite-autoconf-337000/compiler/lib  -I/opt/openwrt/build_dir/target-mipsel_24kc_musl/sqlite-autoconf-337000/compiler/include -I ./ -static slectDB.c  -lsqlite3
 make: Leaving directory '/home/mrx/mystrtest/myCtest'
  

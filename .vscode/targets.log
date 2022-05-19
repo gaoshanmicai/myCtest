@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 15 19:22:16 2022
+# Make data base, printed on Wed May 18 21:02:17 2022
 
 # Variables
 
@@ -16,6 +16,8 @@ GNUMAKEFLAGS :=
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+PAPERSIZE = a4
 # environment
 DESKTOP_SESSION = ubuntu
 # default
@@ -37,21 +39,24 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 # environment
 GDMSESSION = ubuntu
 # environment
+ 
 XMODIFIERS = @im=ibus
 # makefile
 CURDIR := /home/mrx/mystrtest/myCtest
+# makefile (from 'Makefile', line 7)
+LINK = -L/opt/openwrt/build_dir/target-mipsel_24kc_musl/sqlite-autoconf-337000/compiler/lib
 # makefile
 SHELL = /bin/sh
 # environment
 SNAP_DATA = /var/snap/code/96
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"42e84e0914b17800d483f69e299e1b00.zh-cn","_translationsConfigFile":"/home/mrx/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn/tcf.json","_cacheRoot":"/home/mrx/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn","_resolvedLanguagePackCoreLocation":"/home/mrx/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn/da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"/home/mrx/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /snap/code/96/usr/share/code/code
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
-MOZ_CRASHREPORTER_RESTART_ARG_0 = /usr/bin/firefox
+SNAP_INSTANCE_NAME = code
 # environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 1)
@@ -59,21 +64,23 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code-url-handler.desktop
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 USERNAME = mrx
 # environment
-XRE_RESTARTED_BY_PROFILE_MANAGER = 
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MOZ_CRASHREPORTER_RESTART_ARG_1 = https://github.com/login/oauth/authorize?client_id=01ab8ac9400c4e429b23&redirect_uri=https://vscode.dev/redirect&scope=user:email&state=vscode%253A%252F%252Fvscode.github-authentication%252Fdid-authenticate%253Fnonce%253Df844658d-3ac5-43aa-92dd-7e474d8ae7d4%2526windowId%253D1
-# environment
 CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = zh_CN.UTF-8
 # environment
 VSCODE_CWD = /home/mrx
 # environment
@@ -81,13 +88,13 @@ GSETTINGS_SCHEMA_DIR = /snap/code/96/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /opt/openwrt-toolchain-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64/toolchain-mipsel_24kc_gcc-11.2.0_musl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /opt/openwrt-toolchain-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64/toolchain-mipsel_24kc_gcc-11.2.0_musl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/openwrt-toolchain-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64/toolchain-mipsel_24kc_gcc-11.2.0_musl/bin
 # makefile (from 'Makefile', line 3)
-PROG = outputstr unpitest mytest printtest
+PROG = mytestlist sqlitInsert slectDB updatedb deletedb msgrecv msgsend signaltest
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1647,unix/ubuntu:/tmp/.ICE-unix/1647
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1618,unix/ubuntu:/tmp/.ICE-unix/1618
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -96,8 +103,6 @@ GDK_PIXBUF_MODULE_FILE = /home/mrx/snap/code/common/.cache/gdk-pixbuf-loaders.ca
 TEXTDOMAIN = im-config
 # environment
 SNAP = /snap/code/96
-# environment
-SNAP_INSTANCE_NAME = code
 # environment
 SNAP_VERSION = da15b6fd
 # environment
@@ -119,13 +124,11 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 87999
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2334
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
-# environment
-MOZ_CRASHREPORTER_RESTART_ARG_2 = 
 # environment
 GTK_IM_MODULE = ibus
 # environment
@@ -137,19 +140,11 @@ PWD = /home/mrx/mystrtest/myCtest
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1742
+SSH_AGENT_PID = 1695
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
-# environment
-XUL_APP_FILE = 
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-XRE_START_OFFLINE = 
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
-# environment
-MOZ_APP_LAUNCHER = /usr/bin/firefox
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -168,10 +163,10 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # environment
 SNAP_CONTEXT = O_LHCMKvyZ_hfZobFXBAPVXkfxzH8vyVLnTKABGpsahz1YyJDZz6
+# automatic
++F = $(notdir $+)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-MOZ_ASSUME_USER_NS = 1
 # environment
 SNAP_USER_COMMON = /home/mrx/snap/code/common
 # environment
@@ -185,7 +180,7 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # environment
 XDG_VTNR = 2
 # environment
-MAKELEVEL := 0
+LC_TIME = zh_CN.UTF-8
 # environment
 SNAP_REAL_HOME = /home/mrx
 # default
@@ -199,11 +194,11 @@ SNAP_USER_DATA = /home/mrx/snap/code/96
 # environment
 SHLVL = 1
 # makefile (from 'Makefile', line 2)
-CC = gcc
+CC = mipsel-openwrt-linux-gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-23f88f0b-9ad1-425c-adb5-c99d62cd6561.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bd11faf1-8342-4445-8d39-481344ca7df6.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -211,13 +206,17 @@ USER = mrx
 # environment
 SNAP_REVISION = 96
 # environment
-MOZ_LAUNCHED_CHILD = 
+LC_MONETARY = zh_CN.UTF-8
 # makefile
 .DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 5)
+INCLUDE = -I/opt/openwrt/build_dir/target-mipsel_24kc_musl/sqlite-autoconf-337000/compiler/include -I ./
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
 # default
 MAKE_COMMAND := make
 # environment
@@ -229,13 +228,9 @@ STAGING_DIR = /opt/openwrt/staging_dir
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-dd2ecdea-1.67.1-main.sock
 # environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code-url-handler.desktop
-# environment
-XRE_PROFILE_LOCAL_PATH = 
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
 MAKEFLAGS = pqrR
-# environment
-XRE_BINARY_PATH = 
 # environment
 MFLAGS = -pqrR
 # automatic
@@ -244,8 +239,10 @@ MFLAGS = -pqrR
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 GDK_BACKEND = x11
-# automatic
-+F = $(notdir $+)
+# environment
+LC_PAPER = zh_CN.UTF-8
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
 # environment
@@ -254,35 +251,32 @@ TEXTDOMAINDIR = /usr/share/locale/
 MAKEFILES := 
 # environment
 SNAP_COOKIE = O_LHCMKvyZ_hfZobFXBAPVXkfxzH8vyVLnTKABGpsahz1YyJDZz6
+# environment
+LC_NUMERIC = zh_CN.UTF-8
 # automatic
 <F = $(notdir $<)
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
 # environment
 SNAP_NAME = code
 # environment
 LC_ALL = C
 # environment
-__GL_ALLOW_FXAA_USAGE = 0
-# environment
 QT4_IM_MODULE = xim
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# makefile (from 'Makefile', line 6)
-LIBS = -lunpipc -lpthread -lrt
 # automatic
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
-# makefile (from 'Makefile', line 7)
-FLAGS = -g -std=c11 
+# makefile (from 'Makefile', line 8)
+FLAGS = -g -std=c11
 # environment
 SNAP_REEXEC = 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
 WINDOWPATH = 2
-# environment
- 
-MOZ_CRASHREPORTER_DATA_DIRECTORY = /home/mrx/.mozilla/firefox/Crash Reports
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
@@ -290,23 +284,13 @@ GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
-MM_NOTTTY = 1
-# environment
-XRE_PROFILE_PATH = 
+LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-MOZ_CRASHREPORTER_STRINGS_OVERRIDE = /usr/lib/firefox/browser/crashreporter-override.ini
-# environment
-MOZ_CRASHREPORTER_PING_DIRECTORY = /home/mrx/.mozilla/firefox/Pending Pings
-# environment
-MOZ_CRASHREPORTER_EVENTS_DIRECTORY = /home/mrx/.mozilla/firefox/6i58aaz8.default/crashes/events
-# environment
-VSCODE_PID = 88048
-# environment
-MOZ_APP_SILENT_START = 
+VSCODE_PID = 2409
 # variable set hash-table stats:
-# Load=147/1024=14%, Rehash=0, Collisions=23/177=13%
+# Load=139/1024=14%, Rehash=0, Collisions=28/174=16%
 
 # Pattern-specific Variable Values
 
@@ -314,9 +298,9 @@ MOZ_APP_SILENT_START =
 
 # Directories
 
-# . (device 2049, inode 5017222): 20 files, no impossibilities.
+# . (device 2049, inode 5017222): 37 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 37 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -324,64 +308,82 @@ MOZ_APP_SILENT_START =
 
 # Files
 
-# Not a target:
-outputstr.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-15 19:03:10.110574947
-#  File has been updated.
-#  Successfully updated.
-
-outputstr: outputstr.o
-#  Implicit rule search has not been done.
-#  Last modified 2022-05-15 19:03:10.158577754
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 10):
-	gcc -g -o outputstr outputstr.c
-
-# Not a target:
-unpitest.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-15 19:03:10.19457986
-#  File has been updated.
-#  Successfully updated.
-
-unpitest: unpitest.o
-#  Implicit rule search has not been done.
-#  Last modified 2022-05-15 19:03:10.266584071
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 13):
-	$(CC) $(FLAGS) -o unpitest unpitest.c $(LIBS)
-
-all: outputstr unpitest mytest printtest
+all: mytestlist sqlitInsert slectDB updatedb deletedb msgrecv msgsend signaltest
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+ 
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+updatedb: updatedb.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	$(CC) $(FLAGS) -o updatedb   $(LINK)  $(INCLUDE) -static updatedb.c  -lsqlite3
+
+# Not a target:
+updatedb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 18:37:02.256807024
+#  Last modified 2022-05-18 21:02:06.57625446
 #  File has been updated.
 #  Successfully updated.
+
+msgrecv: mserecv.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(FLAGS) -o msgrecv   $(LINK)  $(INCLUDE) mserecv.c
 
 # Not a target:
-printtest.o:
+mytestlist.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 19:03:10.350588985
+#  Last modified 2022-05-18 20:42:53.446296883
 #  File has been updated.
 #  Successfully updated.
 
-printtest: printtest.o
+mytestlist: mytestlist.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-15 19:03:10.398591791
+#  Last modified 2022-05-18 20:42:53.558297706
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 18):
-	$(CC) $(FLAGS) -o printtest printtest.c
+#  recipe to execute (from 'Makefile', line 12):
+	$(CC) $(FLAGS) -o mytestlist   $(LINK)  $(INCLUDE) -static mytestlist.c  -lsqlite3
+
+msgsend: msgsend.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(CC) $(FLAGS) -o msgsend   $(LINK)  $(INCLUDE) msgsend.c
+
+# Not a target:
+msgsend.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mserecv.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -389,42 +391,103 @@ printtest: printtest.o
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+sqlitInsert.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-18 20:42:53.586297912
+#  File has been updated.
+#  Successfully updated.
+
+sqlitInsert: sqlitInsert.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-18 20:42:53.698298735
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 14):
+	$(CC) $(FLAGS) -o sqlitInsert   $(LINK)  $(INCLUDE) -static sqlitInsert.c  -lsqlite3
+
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 21):
+#  recipe to execute (from 'Makefile', line 33):
 	rm *.o $(PROG)
 
-# Not a target:
-mytest.o:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-15 19:03:10.290585475
-#  File has been updated.
-#  Successfully updated.
-
-mytest: mytest.o
+deletedb: deletedb.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-15 19:03:10.330587814
+ 
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 21):
+	$(CC) $(FLAGS) -o deletedb   $(LINK)  $(INCLUDE) -static deletedb.c  -lsqlite3
+
+# Not a target:
+deletedb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+signaltest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+signaltest: signaltest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) $(FLAGS) -o signaltest   $(LINK)  $(INCLUDE) signaltest.c -lpthread
+
+slectDB: slectDB.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := slectDB
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := slectDB.o
+# automatic
+# | := 
+# automatic
+# < := slectDB.o
+# automatic
+# ^ := slectDB.o
+# automatic
+# ? := slectDB.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=4/15=27%
+#  recipe to execute (from 'Makefile', line 16):
+	$(CC) $(FLAGS) -o selectDB   $(LINK)  $(INCLUDE) -static slectDB.c  -lsqlite3
+
+# Not a target:
+slectDB.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-18 20:42:53.726298941
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 15):
-	$(CC) $(FLAGS) -o mytest mytest.c
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/36=0%
+# Load=21/1024=2%, Rehash=0, Collisions=0/57=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 226 B / avg = 8 B
-# current buf: size = 8162 B / used = 226 B / count = 26 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 44 / storage = 442 B / avg = 10 B
+# current buf: size = 8162 B / used = 442 B / count = 44 / avg = 10 B
 
-# strcache performance: lookups = 49 / hit rate = 46%
+# strcache performance: lookups = 83 / hit rate = 46%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=1/49=2%
-# Finished Make data base on Sun May 15 19:22:16 2022
+# Load=44/8192=1%, Rehash=0, Collisions=1/83=1%
+# Finished Make data base on Wed May 18 21:02:17 2022
 
  
